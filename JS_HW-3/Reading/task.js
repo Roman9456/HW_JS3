@@ -35,9 +35,9 @@ fontSizes.forEach(fontSize => {
   fontSize.addEventListener('click', handleFontSizeClick); 
 });
 
-// Получаем ссылки на элементы управления цветом текста и цветом фона
-const textColors = document.querySelectorAll('.text_color');
-const bgColors = document.querySelectorAll('.bg_color');
+
+const textColors = document.querySelectorAll('[data-text-color]');
+const bgColors = document.querySelectorAll('[data-bg-color]');
 
 // Обработчик события при клике на элемент цвета текста
 function handleTextColorClick(event) {
